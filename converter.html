@@ -4,20 +4,61 @@
     <meta charset="utf-8">
     <style>
         #grid{
-          border:5px solid pink;
           display:grid;
-          grid-template-columns:150px 1fr;
+          grid-template-columns:60% 1fr;
+        }
+        .bg{
+          background: #F7F9FC;
+        }
+        .blueText{
+          color: #0066FF;
+        }
+        .memo{
+          width: 500px;
+          height: 280px;
+          left: calc(50% - 495px/2 - 209.5px);
+          top: calc(50% - 279px/2 + 234.5px);
+          background: #DDEBFF;
+          box-shadow: 2px 3px 5px #D4DCE9;
+        }
+        .inputTxt{
+          width: 495px;
+          height: 54px;
+          background: #FFFFFF;
+          box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.12);
+          border-radius: 5px;
+          border-color: #ffffff;
+          text-align: center;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 28px;
+          color: #EAEEF4;
+        }
+        .copyBtu{
+          width: 495px;
+          height: 54px;
+          background: #0066FF;
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+          border-radius: 5px;
+          border-color: #ffffff;
         }
     </style>
 </head>
-<body>
-    <header>
-      NETPLIX STUDIO
-    </header>
-    <h1>명언을 넣고 싶은 공간입니다.</h1>
+<body class="bg">
+  <div id=grid class="blueText">
+    <h5 style="font-size:70%">NETPLIX STUDIO</h5>
+    <br style="font-size:250%"><b>명언을 넣고 싶은 공간입니다.</b>
+  <br>
+    <input type="text" class="inputTxt" value="경로를 입력하세요.">
+  <br>
+    <button type="reset" onclick="alert('경로가 복사되었습니다.')" class="copyBtu">
+      <img src="icon/btu_icon.jpg"style="width: 23.69px; height: 29px;">
+    </button>
+  <br>
+    <h6 class="memo blueText">memo</h6>
 
-    <input type="text" value="경로를 입력하세요.">
-    <input type="button" img src=""
+    <p>ddd</p>
+  </div>
 
-    <p> </p>
 </body>
